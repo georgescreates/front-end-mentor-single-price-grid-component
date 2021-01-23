@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root
+{
+    /*Colors*/
+    --cyan : hsl(179,62%,43%);
+    --bright-yellow: hsl(71,73%,54%);
+
+    --light-gray: hsl(204,43%,93%);
+    --grayish-blue: hsl(218,22%,67%);
+
+    /*Typography*/
+    --font-size: 16px;
+
+    --font-fam: 'Karla', sans-serif;
+
+    --regular-weight: 400;
+    --bold-weight: 700;
+}
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body
+{
+    display: block;
+
+    font-family: var(--font-fam);
+}
+
+h2
+{
+    font-size: 23px;
+    font-weight: var(--bold-weight);
+}
+
+h3
+{
+    font-size: 20px;
+    font-weight: var(--bold-weight);
+}
+
+p
+{
+    font-size: var(--font-size);
+    font-weight: var(--regular-weight);
+}
+
+main
+{
+    width: 100vw;
+    height: auto;
+    min-height: 100vh;
+
+    background-color: var(--light-gray);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 100px 0px;
+}
+
+article
+{
+    width: 49%;
+    height: auto;
+
+    display: grid;
+    grid-template-rows: 1fr 1.2fr;
+}
+
+.card-main-grid:nth-of-type(2)
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.card-grid
+{
+    height: 100%;
+    width: 100%; 
+}
+
+.card-sub-grid
+{
+    height: 100%;
+    width: 100%; 
+}
+
+#join-grid
+{
+    background-color: white;
+
+    padding: 40px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    border-radius: 7px 7px 0px 0px;
+}
+
+#join-grid h2
+{
+    color: var(--cyan);
+}
+
+#join-grid h3
+{
+    margin: 20px 0px;
+
+    color: var(--bright-yellow);
+}
+
+#join-grid p
+{
+    color: var(--grayish-blue);
+
+    width: 80%;
+
+    line-height: 28px;
+}
+
+#monthly-grid
+{
+    background-color: var(--cyan);
+
+    padding: 40px;
+
+    border-bottom-left-radius: 7px;
+
+    color: white;
+}
+
+#pricing-parag
+{
+    width: auto;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+
+    margin: 15px 0px;
+}
+
+#pricing-parag span
+{
+    display: inline-block;
+
+    font-size: 30px;
+    font-weight: var(--bold-weight);
+
+    margin-right: 20px;
+}
+
+#pricing-parag small
+{
+    font-size: var(--font-size);
+
+    opacity: 0.5;
+}
+
+#sign-up-btn
+{
+    height: auto;
+    width: 100%;
+
+    padding: 15px 0px;
+    margin-top: 35px;
+
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    background-color: var(--bright-yellow);
+
+    color: white;
+
+    font-size: var(--font-size);
+    font-weight: var(--bold-weight);
+
+    transition: 0.5s all;
+}
+
+#sign-up-btn:hover
+{
+    box-shadow: 0px 15px 40px rgba(0,0,0,0.15);
+}
+
+#why-grid
+{
+    background-color: rgb(75, 190, 188);
+
+    padding: 40px;
+
+    color: white;
+
+    border-bottom-right-radius: 7px;
+}
+
+#why-grid p
+{
+    margin-top: 20px;
+
+    opacity: 0.8;
+
+    line-height: 23px;
+}
+
+.attribution
+{ 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a 
+{ 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media only screen and (max-width: 1440px)
+{
+    article
+    {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 1080px)
+{
+    article
+    {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 1024px)
+{
+    article
+    {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 965px)
+{
+    article
+    {
+        width: 60%;
+
+        display: grid;
+        grid-template-rows: 1fr;
+    }
+
+    .card-main-grid:nth-of-type(2)
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    #join-grid p
+    {
+        width: 100%;
+    }
+
+    #monthly-grid
+    {
+        border-radius: 0px;
+    }
+
+    #why-grid
+    {
+        border-radius: 0px 0px 7px 7px;
+    }
+}
+
+@media only screen and (max-width: 768px)
+{
+    main
+    {
+        padding: 40px 0px;
+    }
+
+    article
+    {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 375px)
+{
+    article
+    {
+        width: 85%;
+    }
+}
