@@ -8,43 +8,44 @@
   <title>Frontend Mentor | Single Price Grid Component</title>
 </head>
 <body>
-  <main class="main" id="main">
-    <article class="card" id="card">
-      <div class="card-grid card-main-grid" id="join-grid">
-        <h2>Join our community</h2>
-        <h3>30-day, hassle-free money back guarantee</h3>
+  <main id="main-part">
+    <section id="card-section">
+      <div class="card-part" id="join-part">
+        <h1>
+          <span id="main-heading">Join our community</span>
+          <span id="sub-heading">30-day, hassle-free money back guarantee</span>
+        </h1>
         <p>Gain access to our full library of tutorials along with expert code reviews. Perfect for any developers who are serious about honing their skills.</p>
       </div>
-      <div class="card-grid card-main-grid">
-        <div class="card-sub-grid" id="monthly-grid">
-          <h3>Monthly Subscription</h3>
+      <div class="card-part" id="month-why-part">
+        <div class="card-down-part" id="month-part">
+          <h2>Monthly Subscription</h2>
           <p id="pricing-parag">
-            <span> &dollar;29</span>
-            <small>per month</small>
+            <span>&dollar;29</span>
+            <span>per month</span>
           </p>
           <p>Full access for less than &dollar;1 a day</p>
-          <button class="btn" id="sign-up-btn" value="submit" type="submit">Sign Up</button>
+          <a href="#" id="signup-anchor">Sign Up</a>
         </div>
-        <div class="card-grid card-sub-grid" id="why-grid">
-          <h3>Why Us</h3>
-          <p>
-            Tutorials by industry experts <br>
-            Peer &amp; expert code review <br>
-            Coding exercises <br>
-            Access to our GitHub repos <br>
-            Community forum <br>
-            Flashcard decks <br>
-            New videos every week <br>
-          </p>
+        <div class="card-down-part" id="why-part">
+          <h2>Why Us</h2>
+          <ul id="reasons-list">
+            <li class="reasons">Tutorials by industry experts</li>
+            <li class="reasons">Peer &amp; expert code review</li>
+            <li class="reasons">Coding exercises</li>
+            <li class="reasons">Access to our GitHub repos</li>
+            <li class="reasons">Community forum</li>
+            <li class="reasons">Flashcard decks</li>
+            <li class="reasons">New videos every week</li>
+          </ul>
         </div>
       </div>
-    </article>
+    </section>
   </main>
-  
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Georges creates</a>.
+      Coded by <a href="#">Georges Creates</a>.
     </p>
   </footer>
 </body>
